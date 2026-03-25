@@ -1,15 +1,20 @@
-# ── Core ────────────────────────────────────────────────────────────────────
-# No mandatory third-party deps; stdlib only for basic operation.
+# ── Core (no mandatory third-party deps for geometry/standards/BOM) ──────────
 
-# ── Windows / AutoCAD COM interface ─────────────────────────────────────────
-# Required on Windows to connect to AutoCAD via COM automation.
-pywin32>=306; sys_platform == "win32"
+# ── DXF / DWG drawing generation ─────────────────────────────────────────────
+ezdxf>=1.1.0
 
 # ── BOM Excel export ─────────────────────────────────────────────────────────
 openpyxl>=3.1.0
 
-# ── YAML layout support (optional) ───────────────────────────────────────────
+# ── GUI preview (matplotlib embedded in Tkinter) ──────────────────────────────
+matplotlib>=3.7.0
+numpy>=1.24.0
+
+# ── YAML layout support (optional – used by duct_automation legacy module) ───
 PyYAML>=6.0
 
-# ── Development / testing ────────────────────────────────────────────────────
+# ── Windows / AutoCAD COM interface (optional) ───────────────────────────────
+# pywin32>=306; sys_platform == "win32"
+
+# ── Development / testing ─────────────────────────────────────────────────────
 pytest>=8.0
