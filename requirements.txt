@@ -1,0 +1,15 @@
+# ── Core ────────────────────────────────────────────────────────────────────
+# No mandatory third-party deps; stdlib only for basic operation.
+
+# ── Windows / AutoCAD COM interface ─────────────────────────────────────────
+# Required on Windows to connect to AutoCAD via COM automation.
+pywin32>=306; sys_platform == "win32"
+
+# ── BOM Excel export ─────────────────────────────────────────────────────────
+openpyxl>=3.1.0
+
+# ── YAML layout support (optional) ───────────────────────────────────────────
+PyYAML>=6.0
+
+# ── Development / testing ────────────────────────────────────────────────────
+pytest>=8.0

@@ -1,0 +1,246 @@
+{
+  "project_name": "Office Level 3 HVAC",
+  "project_number": "P-2025-003",
+  "drawn_by": "Engineer A",
+  "date": "2025-01-15",
+  "scale": "1:100",
+  "runs": [
+    {
+      "name": "Supply Main",
+      "sections": [
+        {
+          "type": "rectangular",
+          "tag": "D-01",
+          "width": 800,
+          "height": 400,
+          "length": 6000,
+          "start": {"x": 0, "y": 0},
+          "angle": 0,
+          "material": "galvanized",
+          "gauge": 0.8
+        },
+        {
+          "type": "rectangular",
+          "tag": "D-02",
+          "width": 600,
+          "height": 400,
+          "length": 4000,
+          "start": {"x": 6200, "y": 0},
+          "angle": 0,
+          "material": "galvanized",
+          "gauge": 0.8
+        },
+        {
+          "type": "rectangular",
+          "tag": "D-03",
+          "width": 400,
+          "height": 300,
+          "length": 3000,
+          "start": {"x": 10400, "y": 0},
+          "angle": 0,
+          "material": "galvanized",
+          "gauge": 0.6
+        },
+        {
+          "type": "rectangular",
+          "tag": "D-04",
+          "width": 500,
+          "height": 300,
+          "length": 2500,
+          "start": {"x": 6100, "y": 1000},
+          "angle": 90,
+          "material": "galvanized",
+          "gauge": 0.6
+        }
+      ],
+      "fittings": [
+        {
+          "type": "TEE",
+          "shape": "rectangular",
+          "tag": "F-01",
+          "width": 800,
+          "height": 400,
+          "position": {"x": 6050, "y": 0},
+          "angle": 0
+        },
+        {
+          "type": "REDUCER",
+          "shape": "rectangular",
+          "tag": "F-02",
+          "width": 800,
+          "height": 400,
+          "outlet_width": 600,
+          "outlet_height": 400,
+          "position": {"x": 6000, "y": 0},
+          "angle": 0
+        },
+        {
+          "type": "REDUCER",
+          "shape": "rectangular",
+          "tag": "F-03",
+          "width": 600,
+          "height": 400,
+          "outlet_width": 400,
+          "outlet_height": 300,
+          "position": {"x": 10300, "y": 0},
+          "angle": 0
+        },
+        {
+          "type": "DAMPER",
+          "shape": "rectangular",
+          "tag": "VD-01",
+          "width": 800,
+          "height": 400,
+          "position": {"x": 300, "y": 0},
+          "angle": 0
+        },
+        {
+          "type": "DIFFUSER",
+          "shape": "rectangular",
+          "tag": "SD-01",
+          "width": 600,
+          "height": 600,
+          "position": {"x": 2000, "y": 200},
+          "quantity": 1
+        },
+        {
+          "type": "DIFFUSER",
+          "shape": "rectangular",
+          "tag": "SD-02",
+          "width": 600,
+          "height": 600,
+          "position": {"x": 4000, "y": 200},
+          "quantity": 1
+        },
+        {
+          "type": "DIFFUSER",
+          "shape": "rectangular",
+          "tag": "SD-03",
+          "width": 600,
+          "height": 600,
+          "position": {"x": 7500, "y": 200},
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Return Main",
+      "sections": [
+        {
+          "type": "rectangular",
+          "tag": "R-01",
+          "width": 700,
+          "height": 350,
+          "length": 8000,
+          "start": {"x": 0, "y": -2500},
+          "angle": 0,
+          "material": "galvanized",
+          "gauge": 0.8
+        },
+        {
+          "type": "rectangular",
+          "tag": "R-02",
+          "width": 500,
+          "height": 300,
+          "length": 3000,
+          "start": {"x": 8200, "y": -2500},
+          "angle": 0,
+          "material": "galvanized",
+          "gauge": 0.8
+        }
+      ],
+      "fittings": [
+        {
+          "type": "ELBOW_90",
+          "shape": "rectangular",
+          "tag": "F-04",
+          "width": 700,
+          "height": 350,
+          "position": {"x": 8100, "y": -2500},
+          "angle": 0
+        },
+        {
+          "type": "DIFFUSER",
+          "shape": "rectangular",
+          "tag": "RG-01",
+          "width": 800,
+          "height": 400,
+          "position": {"x": 1500, "y": -2300},
+          "quantity": 1
+        },
+        {
+          "type": "DIFFUSER",
+          "shape": "rectangular",
+          "tag": "RG-02",
+          "width": 800,
+          "height": 400,
+          "position": {"x": 5000, "y": -2300},
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Round Exhaust",
+      "sections": [
+        {
+          "type": "round",
+          "tag": "E-01",
+          "diameter": 400,
+          "length": 4000,
+          "start": {"x": 0, "y": -5000},
+          "angle": 0,
+          "material": "galvanized",
+          "gauge": 0.7
+        },
+        {
+          "type": "round",
+          "tag": "E-02",
+          "diameter": 315,
+          "length": 3000,
+          "start": {"x": 4200, "y": -5000},
+          "angle": 0,
+          "material": "galvanized",
+          "gauge": 0.6
+        },
+        {
+          "type": "round",
+          "tag": "E-03",
+          "diameter": 250,
+          "length": 2000,
+          "start": {"x": 7400, "y": -5000},
+          "angle": 0,
+          "material": "galvanized",
+          "gauge": 0.6
+        }
+      ],
+      "fittings": [
+        {
+          "type": "REDUCER",
+          "shape": "round",
+          "tag": "F-05",
+          "diameter": 400,
+          "outlet_diameter": 315,
+          "position": {"x": 4100, "y": -5000},
+          "angle": 0
+        },
+        {
+          "type": "REDUCER",
+          "shape": "round",
+          "tag": "F-06",
+          "diameter": 315,
+          "outlet_diameter": 250,
+          "position": {"x": 7300, "y": -5000},
+          "angle": 0
+        },
+        {
+          "type": "ELBOW_90",
+          "shape": "round",
+          "tag": "F-07",
+          "diameter": 250,
+          "position": {"x": 9400, "y": -5000},
+          "angle": 0
+        }
+      ]
+    }
+  ]
+}
